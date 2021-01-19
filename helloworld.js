@@ -20,7 +20,7 @@ for (var k in interfaces) {
     }
 }
 
-require("http").createServer(function (req, res) {
+require("unit-http").createServer(function (req, res) {
     var html = buildHtml(req, argv.colour);
     ip_address = req.connection.remoteAddress
     res.writeHead(200, {"Content-Type": "text/html"});
