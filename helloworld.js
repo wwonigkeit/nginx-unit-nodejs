@@ -58,7 +58,7 @@ function buildHtml(req) {
               "<body class=\"valign-wrapper\" style=\"height:100vh;\">" +
                   "<div class=\"row\">" +
                     "<div class=\"center-align\">" +
-                        "<img src=\"data:image/png;base64,`" + picture + "`\" alt=\"Vorteil\">" +
+                        "<img src=\"data:image/png;base64," + picture + "\" alt=\"Vorteil\">" +
                         "<h5>WELCOME TO VORTEIL</h5>" +
                     "</div>" +
                   "</div>" +
