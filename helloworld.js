@@ -56,7 +56,7 @@ function buildHtml(req, colour) {
                   "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js\"></script>" +
                   "<style>" +
                     "body {" +
-                    "background-color: #" + colour + ";" +
+                    "background-color: " + colour + ";" +
                     "\"}" +
                     "h5 {" +
                     "color: #2396d8;" +
