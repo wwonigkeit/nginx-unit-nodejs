@@ -1,6 +1,3 @@
-# nginx-unit-nodejs
-Demo NGINX Unit application in node.js
-
 # Node.js Hello World
 
 Hello World is a simple webserver to use as an introduction to Vorteil. It hosts a webpage containing a simple hello world message with Vorteil's logo. The background colour of the page can be controlled by setting the `--colour` argument to any valid HTML colour code.
