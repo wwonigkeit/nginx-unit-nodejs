@@ -3,7 +3,7 @@
 'use strict';
 
 var argv = require('yargs/yargs')(process.argv.slice(2))
-    .usage('Usage: $0 -colour [hex-colour FFFFFF]')
+    .usage('Usage: $0 --colour=[FFFFFF]')
     .demandOption(['colour'])
     .argv;
 
@@ -22,7 +22,7 @@ for (var k in interfaces) {
 
 require("unit-http").createServer(function (req, res) {
     var html = buildHtml(req, argv.colour);
-    ip_address = req.connection.remoteAddress
+    var ip_address = req.connection.remoteAddress;
     res.writeHead(200, {"Content-Type": "text/html"});
     res.end(html)
 }).listen(3000, function() { console.log("Listening on port 3000")})
